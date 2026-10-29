@@ -280,4 +280,3 @@ jobs:
               for title, key in stages:
                   f.write(f"| {title} | {os.environ[key]} |\n")
           PYCODE
-```
