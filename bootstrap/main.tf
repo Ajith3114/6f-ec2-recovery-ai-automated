@@ -11,7 +11,7 @@ variable "oidc_provider_arn" {
   default     = ""
 }
 data "aws_caller_identity" "me" {}
-locals { prefix = "vj-recovery" }
+locals { prefix = "ajith-recovery" }
 resource "aws_s3_bucket" "state" {
   bucket = "${local.prefix}-${data.aws_caller_identity.me.account_id}-state"
 }
